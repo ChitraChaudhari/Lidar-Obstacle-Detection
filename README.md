@@ -1,13 +1,13 @@
 # Lidar Obstacle Detection
 
 ### Project Goals
--- Implement Obstacle detection on real PCD from a lidar
--- use pcl-library for general data handling and initial testing
--- implement following modules: 
-   -- PCD filtering, for reducing computational cost, without loss of detail
-  -- Segment the filtered cloud into two parts, road and obstacles, using RANSAC based 3D-plane extraction
-  -- Cluster the obstacle cloud, using K-D Tree for 3D space.
-  -- Find bounding boxes for the clusters
+- Implement Obstacle detection on real PCD from a lidar
+- use pcl-library for general data handling and initial testing
+- implement following modules: 
+  - PCD filtering, for reducing computational cost, without loss of detail
+  - Segment the filtered cloud into two parts, road and obstacles, using RANSAC based 3D-plane extraction
+  - Cluster the obstacle cloud, using K-D Tree for 3D space.
+  - Find bounding boxes for the clusters
 
 ### Dependencies:
 
@@ -48,4 +48,3 @@ to run, use following from within the build folder:
 ./environment
 ```
 ### Sample Result
-[![alt text](https://github.com/ChitraChaudhari/Lidar-Obstacle-Detection/blob/master/src/Lidar_Obstacle_Detection.mp4](https://github.com/ChitraChaudhari/Lidar-Obstacle-Detection/blob/master/src/Lidar_Obstacle_Detection.mp4 "title")
