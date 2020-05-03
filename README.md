@@ -51,9 +51,9 @@ to run, use following from within the build folder:
 
 <!-- blank line -->
 <figure class="video_container">
-  <iframe src="https://youtu.be/tgMW6Kb29mU" frameborder="0" allowfullscreen="true"> </iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/tgMW6Kb29mU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
 <!-- blank line -->
-https://youtu.be/tgMW6Kb29mU
+
 
 [![Lidar Obstacle Detection](https://youtu.be/tgMW6Kb29mU.jpg )](https://youtu.be/tgMW6Kb29mU  "Lidar Obstacle Detection")
