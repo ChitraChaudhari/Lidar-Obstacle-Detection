@@ -1,19 +1,25 @@
-# Sensor Fusion Self-Driving Car Course
+# Lidar Obstacle Detection
 
-<img src="https://github.com/awbrown90/SensorFusionHighway/blob/master/media/ObstacleDetectionFPS.gif" width="700" height="400" />
+### Project Goals
+-- Implement Obstacle detection on real PCD from a lidar
+-- use pcl-library for general data handling and initial testing
+-- implement following modules: 
+   -- PCD filtering, for reducing computational cost, without loss of detail
+  -- Segment the filtered cloud into two parts, road and obstacles, using RANSAC based 3D-plane extraction
+  -- Cluster the obstacle cloud, using K-D Tree for 3D space.
+  -- Find bounding boxes for the clusters
 
-### Welcome to the Sensor Fusion course for self-driving cars.
+### Dependencies:
 
-In this course we will be talking about sensor fusion, whch is the process of taking data from multiple sensors and combining it to give us a better understanding of the world around us. we will mostly be focusing on two sensors, lidar, and radar. By the end we will be fusing the data from these two sensors to track multiple cars on the road, estimating their positions and speed.
+Ubuntu 16.04 OS
 
-**Lidar** sensing gives us high resolution data by sending out thousands of laser signals. These lasers bounce off objects, returning to the sensor where we can then determine how far away objects are by timing how long it takes for the signal to return. Also we can tell a little bit about the object that was hit by measuring the intesity of the returned signal. Each laser ray is in the infrared spectrum, and is sent out at many different angles, usually in a 360 degree range. While lidar sensors gives us very high accurate models for the world around us in 3D, they are currently very expensive, upwards of $60,000 for a standard unit.
+cmake >= 3.14
 
-**Radar** data is typically very sparse and in a limited range, however it can directly tell us how fast an object is moving in a certain direction. This ability makes radars a very pratical sensor for doing things like cruise control where its important to know how fast the car infront of you is traveling. Radar sensors are also very affordable and common now of days in newer cars.
+gcc/g++ >= 8.0
 
-**Sensor Fusion** by combing lidar's high resoultion imaging with radar's ability to measure velocity of objects we can get a better understanding of the sorrounding environment than we could using one of the sensors alone.
+PCL >= 1.2 : The code extensively utilizes the Point Cloud Library (PCL).
 
-
-## Installation
+### Installation
 
 ### Linux Ubuntu 16
 
@@ -29,3 +35,17 @@ A few updates to the instructions above were needed.
 * BUILD_visualization needed to be manually turned on, this link shows you how to do that,
 http://www.pointclouds.org/documentation/tutorials/building_pcl.php
 
+### Build and Run
+clone this repository, enter the cloned directory/folder and build:
+```
+mkdir build && cd build
+cmake ..
+make
+```
+
+to run, use following from within the build folder:
+```
+./environment
+```
+### Sample Result
+[![alt text](https://github.com/ChitraChaudhari/Lidar-Obstacle-Detection/blob/master/src/Lidar_Obstacle_Detection.mp4](https://github.com/ChitraChaudhari/Lidar-Obstacle-Detection/blob/master/src/Lidar_Obstacle_Detection.mp4 "title")
