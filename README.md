@@ -49,11 +49,4 @@ to run, use following from within the build folder:
 ```
 ### Sample Result
 
-<!-- blank line -->
-<figure class="video_container">
-  <iframe src="https://www.youtube.com/embed/tgMW6Kb29mU" frameborder="0" allowfullscreen="true"></iframe>
-</figure>
-<!-- blank line -->
-
-
 [![Lidar Obstacle Detection](https://youtu.be/tgMW6Kb29mU.jpg )](https://youtu.be/tgMW6Kb29mU  "Lidar Obstacle Detection")
